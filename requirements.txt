@@ -1,12 +1,12 @@
 -f https://download.pytorch.org/whl/torch_stable.html
 
 beautifulsoup4==4.9.3
-certifi==2020.6.20
-ca-certificates==2020.10.14
+
+
 itsdangerous == 1.1.0
 scipy==1.6.1
 flask==1.1.2
-icc_rt==2019.0.0
+
 jinja2==2.11.2
 numpy==1.19.2
 gunicorn==0.17.0
