@@ -2,10 +2,11 @@
 
 beautifulsoup4==4.9.3
 
+scipy==1.6.1
 flask==1.1.2
-
+jinja2==2.11.2
 numpy==1.19.2
-
+gunicorn==0.17.0
 torch==1.8.1+cpu
 
 regex==2020.11.13
