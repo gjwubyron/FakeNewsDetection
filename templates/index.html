@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>FakeNewsDetector</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px
+  border-collapse: collapse;
+  width: 100%;
+  position: absolute;
+  bottom:4px;
+  
+ 
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+
+
+#customers tr:hover {background-color: black ;}
+
+#customers th {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+ <div class="login">
+	
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="news" placeholder="news" required="required" />
+        
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   
+
+ </div>
+ <br>
+ <br>
+ <div style="overflow-x:auto;">
+ 
+ <table id="customers">
+  <tr>
+    <th>NEWS</th>
+    <th>PREDICTION</th>
+  </tr>
+  
+  <tr>
+    <td>{{title1}}</td>
+    <td>{{label1}}</td>
+  </tr>
+  <tr>
+    <td>{{title2}}</td>
+    <td>{{label2}}</td>
+  </tr>
+  <tr>
+    <td>{{title3}}</td>
+    <td>{{label3}}</td>
+  </tr>
+  <tr>
+    <td>{{title4}}</td>
+    <td>{{label4}}</td>
+  </tr>
+  <tr>
+    <td>{{title5}}</td>
+    <td>{{label5}}</td>
+  </tr>
+  <tr>
+    <td>{{title6}}</td>
+    <td>{{label6}}</td>
+  </tr>
+  <tr>
+    <td>{{title7}}</td>
+    <td>{{label7}}</td>
+  </tr>
+  <tr>
+    <td>{{title8}}</td>
+    <td>{{label8}}</td>
+  </tr>
+  <tr>
+    <td>{{title9}}</td>
+    <td>{{label9}}</td>
+  </tr>
+  <tr>
+    <td>{{title10}}</td>
+    <td>{{label10}}</td>
+  </tr>
+  
+</table>
+</div> 
+
+
+</body>
+</html>
