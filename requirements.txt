@@ -5,7 +5,7 @@ flask==1.1.2
 
 numpy==1.19.2
 
-torch==1.8.0+cpu
+torch==1.8.1+cpu
 
 regex==2020.11.13
 requests==2.25.1
